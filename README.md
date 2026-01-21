@@ -57,15 +57,11 @@ Open http://localhost:5173
 - If frontend and backend share the same origin, CORS is not needed.
 - Keep secrets in environment variables and never commit .env files.
 
-## Tests
-```bash
-cd backend
-pytest
-```
 
 ## API
 - Health: http://localhost:8000/health
-- API base: http://localhost:8000/api/v1
+- API base: http://localhost:8000
+- API docs: http://localhost:8000/docs
 
 ## License
 Add a LICENSE file (MIT is a common choice).
