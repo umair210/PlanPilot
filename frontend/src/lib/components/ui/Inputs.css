@@ -1,0 +1,14 @@
+.input, .textarea, .select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-2);
+  background: rgba(2, 6, 23, 0.35);
+  color: var(--text);
+  outline: none;
+}
+
+.textarea { resize: vertical; }
+.input:focus, .textarea:focus, .select:focus {
+  border-color: rgba(99,102,241,0.45);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+}
