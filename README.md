@@ -27,7 +27,7 @@ source .venv/bin/activate
 pip install -e .
 cp .env.example .env
 
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --port 8000
 ```
 
 ### Frontend
@@ -45,7 +45,7 @@ Open http://localhost:5173
 
 ### backend/.env
 - OPENAI_API_KEY (required for AI plan generation)
-- OPENAI_MODEL (default: gpt-4o-mini)
+- OPENAI_MODEL (gpt-5.2)
 - DATABASE_URL (default: sqlite+aiosqlite:///./planpilot.db)
 - CORS_ORIGINS (default: http://localhost:5173)
 
@@ -55,7 +55,7 @@ Open http://localhost:5173
 ## Production Notes
 - Set CORS_ORIGINS to your deployed frontend origin (comma-separated).
 - If frontend and backend share the same origin, CORS is not needed.
-- Keep secrets in environment variables and never commit .env files.
+- Keep secrets in environment variables
 
 
 ## API
